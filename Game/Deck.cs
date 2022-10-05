@@ -71,7 +71,8 @@ namespace HiLo
         public void Shuffle()
         {
             List<string> newDeck = new List<string>();
-            for (int i = 0; i < drawPile.Count; i++)
+            int drawPileLength = drawPile.Count;
+            for (int i = 0; i < drawPileLength; i++)
             {
                 Random rnd = new Random();
                 int randomIndex = rnd.Next(drawPile.Count);
